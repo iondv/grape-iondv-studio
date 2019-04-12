@@ -1,0 +1,41 @@
+{
+  "name": "grape-iondv-studio",
+  "version": "1.0.0",
+  "description": "Set of IONDV. Studio components (metadata, views, navigations) for the GrapesJS editor to create interface in IONDV. Framework application",
+  "main": "dist/grapesjs-studio.min.js",
+  "scripts": {
+    "lint": "eslint src",
+    "v:patch": "npm version --no-git-tag-version patch",
+    "build": "webpack --env.production",
+    "start": "webpack-dev-server --open --progress --colors"
+  },
+  "homepage": "https://github.com/iondv/grape-iondv-studio",
+  "bugs": {
+    "url": "https://github.com/iondv/grape-iondv-studio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iondv/grape-iondv-studio.git"
+  },
+  "keywords": [],
+  "license": "BSD-3-Clause",
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.5.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.18.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.8"
+  }
+}
